@@ -1,9 +1,9 @@
 package com.tokbox.test.diceroller
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.tokbox.test.diceroller.databinding.ActivityMainBinding
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,7 +15,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(mBinding.root)
 
         mBinding.buttonRoll.setOnClickListener {
-            Toast.makeText(this, "button clicked", Toast.LENGTH_SHORT).show()
+            rollDice()
         }
+    }
+
+    private fun rollDice() {
+        mBinding.textViewResult.text = (Random().nextInt(6) + 1).toString()
     }
 }
