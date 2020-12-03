@@ -1,8 +1,8 @@
-package com.tokbox.test.diceroller
+package io.rifat.code.diceroller
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.tokbox.test.diceroller.databinding.ActivityMainBinding
+import io.rifat.code.diceroller.databinding.ActivityMainBinding
 import java.util.*
 
 class MainActivity : AppCompatActivity() {

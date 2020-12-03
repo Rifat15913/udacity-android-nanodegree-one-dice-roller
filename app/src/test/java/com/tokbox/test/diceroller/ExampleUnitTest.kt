@@ -1,4 +1,4 @@
-package com.tokbox.test.diceroller
+package io.rifat.code.diceroller
 
 import org.junit.Assert.assertEquals
 import org.junit.Test
